@@ -9,8 +9,8 @@ Requerimiento necesarios:
 
 
 Primero instalar kubectl en windows:
-https://kubernetes.io/es/docs/tasks/tools/included/install-kubectl-windows/#install-kubectl-binary-with-curl-on-windows
-https://kubernetes.io/es/docs/tasks/tools/included/install-kubectl-windows/#install-on-windows-using-chocolatey-or-scoop
+- https://kubernetes.io/es/docs/tasks/tools/included/install-kubectl-windows/#install-kubectl-binary-with-curl-on-windows
+- https://kubernetes.io/es/docs/tasks/tools/included/install-kubectl-windows/#install-on-windows-using-chocolatey-or-scoop
 
 Instalar el binario de kubectl en Windows:
 Kubectl.exe - situado en C:\Program Files\Docker\Docker\resources\bin -- ya lo tenemos instalado el ejecutable con Docker
@@ -92,19 +92,19 @@ http://127.0.0.1:puerto
 
 
 Comandos básicos de Kubernetes:
-kubectl get nodes -- visualiza los nodos existentes
-kubectl proxy -- conexión con el servidor mediante 127.0.0.1:puerto
-kubectl get services –- para enumerar los servicios en el espacio de nombres predeterminado
-kubectl config view –- para ver la configuración actual de kubectl
-kubectl config get-contexts –- para enumerar los contextos disponibles
-kubectl config current-context –- para obtener el contexto actual de kubectl
-kubectl get pods –all-namespaces –- para enumerar pods en todos los espacios de nombres
-kubectl get services –sort-by=.metadata.name -- permite ordenar la salida según un campo en particular y enumerar los servicios ordenados por nombre de servicio
-kubectl get events –sort-by=.metadata.creationTimestap -- para obtener una lista de eventos, pero que está ordenada por marca de tiempo, podemos usar -sort-by
-kubectl get service –A -- para listar los servicios
-kubectl get pods –A –- listar pods
-kubectl get deployments –A –- listar deployments
-kubectl get namespaces – listar namespaces (espacio de nombres)
-kubectl get deployments,pods,services,namespaces –o wide –- listar varios componentes en un solo comando
-kubectl get deploy,pod,svc,ns –- listar con abreviaturas
-kubectl config get-clusters
+- kubectl get nodes -- visualiza los nodos existentes
+- kubectl proxy -- conexión con el servidor mediante 127.0.0.1:puerto
+- kubectl get services –- para enumerar los servicios en el espacio de nombres predeterminado
+- kubectl config view –- para ver la configuración actual de kubectl
+- kubectl config get-contexts –- para enumerar los contextos disponibles
+- kubectl config current-context –- para obtener el contexto actual de kubectl
+- kubectl get pods –all-namespaces –- para enumerar pods en todos los espacios de nombres
+- kubectl get services –sort-by=.metadata.name -- permite ordenar la salida según un campo en particular y enumerar los servicios ordenados por nombre de servicio
+- kubectl get events –sort-by=.metadata.creationTimestap -- para obtener una lista de eventos, pero que está ordenada por marca de tiempo, podemos usar -sort-by
+- kubectl get service –A -- para listar los servicios
+- kubectl get pods –A –- listar pods
+- kubectl get deployments –A –- listar deployments
+- kubectl get namespaces – listar namespaces (espacio de nombres)
+- kubectl get deployments,pods,services,namespaces –o wide –- listar varios componentes en un solo comando
+- kubectl get deploy,pod,svc,ns –- listar con abreviaturas
+- kubectl config get-clusters
