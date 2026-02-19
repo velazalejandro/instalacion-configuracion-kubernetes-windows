@@ -20,6 +20,7 @@ O si tiene curl instalado, use este comando:
 <img width="786" height="97" alt="image" src="https://github.com/user-attachments/assets/bb852ea5-f4ea-46a7-b838-3b1e9083d59b" />
 curl -LO https://dl.k8s.io/release//bin/windows/amd64/kubectl.exe
 
+
 1. Validar el binario:
 Descargue el archivo de comprobación de kubectl:
 <img width="742" height="96" alt="image" src="https://github.com/user-attachments/assets/215fe3d9-4878-41cf-995c-cae12d01b527" />
@@ -33,6 +34,7 @@ CertUtil -hashfile kubectl.exe SHA256 type kubectl.exe.sha256
 
 El archivo SHA256 lo movemos a la ruta C:\Windows\System32
 <img width="949" height="201" alt="image" src="https://github.com/user-attachments/assets/a869c766-4ba0-4902-97c8-192a9825dcdd" />
+
 Movemos el ejecutable kubectl.exe situado en C:\Program Files\Docker\Docker\resources\bin a la carpeta de system32
 Usando PowerShell puede automatizar la verificación usando el operador –eq para obtener un resultado de True o False:
 $($(CertUtil -hashfile .\kubectl.exe SHA256)[1] -replace " ", "") -eq $(type .\kubectl.exe.sha256)
