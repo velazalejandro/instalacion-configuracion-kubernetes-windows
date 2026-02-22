@@ -1,12 +1,20 @@
 # instalacion-configuracion-kubernetes-windows
+# Título
+Instalación y configuración de Kubernetes en Windows
 
-INSTALACIÓN Y CONFIGURACIÓN DE KUBERNETES EN WINDOWS
-Requerimiento necesarios:
-- Windows 10
+## Comenzando 🚀
+_Estas instrucciones te permiten obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
+
+### Pre-requisitos 📋
+_Que cosas necesitas para instalar el software y como instalarlas_
+- Manejar la consola de PowerShell para la ejecución de comandos.
 - Hyper V activado
 - Docker 18.02 en adelante
-- Conocimientos en PowerShell, Docker y Kubernetes
+- Conocimientos en Docker y Kubernetes
 
+
+### Instalación 🔧 Pruebas ⚙️ y Despliegues 📦
+INSTALACIÓN Y CONFIGURACIÓN DE KUBERNETES EN WINDOWS
 
 Primero instalar kubectl en windows:
 - https://kubernetes.io/es/docs/tasks/tools/included/install-kubectl-windows/#install-kubectl-binary-with-curl-on-windows
