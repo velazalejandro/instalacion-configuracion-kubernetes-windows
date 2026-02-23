@@ -138,7 +138,9 @@ minikube dashboard
 <img width="838" height="88" alt="image" src="https://github.com/user-attachments/assets/85123d91-339b-4223-bb12-2e0e75733bd2" />
 
 <img width="953" height="514" alt="image" src="https://github.com/user-attachments/assets/99b37f92-d04f-4b45-8623-1a8df36e5075" />
+
 http://127.0.0.1:puerto
+
 
 
 
