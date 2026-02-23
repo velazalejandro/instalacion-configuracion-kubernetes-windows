@@ -20,23 +20,28 @@ Primero instalar kubectl en windows:
 - https://kubernetes.io/es/docs/tasks/tools/included/install-kubectl-windows/#install-kubectl-binary-with-curl-on-windows
 - https://kubernetes.io/es/docs/tasks/tools/included/install-kubectl-windows/#install-on-windows-using-chocolatey-or-scoop
 
-Instalar el binario de kubectl en Windows:
+Instalar el binario de kubectl en Windows: kubectl.exe - situado en C:\Program Files\Docker\Docker\resources\bin -- ya tenemos instalado el ejecutable con Docker
 <img width="691" height="334" alt="image" src="https://github.com/user-attachments/assets/378b9bfb-ee9b-4298-a58f-2829124f2e43" />
-Kubectl.exe - situado en C:\Program Files\Docker\Docker\resources\bin -- ya lo tenemos instalado el ejecutable con Docker
+
 
 O si tiene curl instalado, use este comando:
 <img width="786" height="97" alt="image" src="https://github.com/user-attachments/assets/bb852ea5-f4ea-46a7-b838-3b1e9083d59b" />
+
 curl -LO https://dl.k8s.io/release//bin/windows/amd64/kubectl.exe
 
 
 1. Validar el binario:
 Descargue el archivo de comprobación de kubectl:
 <img width="742" height="96" alt="image" src="https://github.com/user-attachments/assets/215fe3d9-4878-41cf-995c-cae12d01b527" />
+
 curl -LO https://dl.k8s.io//bin/windows/amd64/kubectl.exe.sha256
 
 Valide el binario de kubectl con el archivo de comprobación:
+
 Usando la consola del sistema para comparar manualmente la salida de CertUtil con el archivo de comprobación descargado:
+
 CertUtil -hashfile kubectl.exe SHA256 type kubectl.exe.sha256
+
 <img width="567" height="91" alt="image" src="https://github.com/user-attachments/assets/02309651-a8ec-4592-8fe9-3a8392017385" />
 <img width="691" height="353" alt="image" src="https://github.com/user-attachments/assets/500d2417-601d-47c0-b890-24a0e79e93c8" />
 
@@ -45,6 +50,7 @@ El archivo SHA256 lo movemos a la ruta C:\Windows\System32
 
 Movemos el ejecutable kubectl.exe situado en C:\Program Files\Docker\Docker\resources\bin a la carpeta de system32
 Usando PowerShell puede automatizar la verificación usando el operador –eq para obtener un resultado de True o False:
+
 $($(CertUtil -hashfile .\kubectl.exe SHA256)[1] -replace " ", "") -eq $(type .\kubectl.exe.sha256)
 <img width="845" height="68" alt="image" src="https://github.com/user-attachments/assets/d7ac7561-6cb4-44e9-aacc-9f3f62961811" />
 Nos da un resultado de False.
@@ -52,9 +58,13 @@ Nos da un resultado de False.
 
 2. Agregamos el binario a su path:
 <img width="514" height="492" alt="image" src="https://github.com/user-attachments/assets/189b295d-723b-42d2-8896-fe8c35183ce4" />
+
 Path – Editar – Nuevo
+
 Agregamos la ruta C:\Windows\System32
+
 <img width="237" height="35" alt="image" src="https://github.com/user-attachments/assets/f3e4cabd-9c2d-478a-bdc1-c1759608781f" />
+
 C:\Windows\system32\kubectl.exe.sha256
 
 3. Para asegurar que la versión de kubectl es la misma que descargada, ejecute:
@@ -68,13 +78,17 @@ Client Version – v1.26.0 y v.1.25.2
 Server Version – v1.25.3
 
 Creamos y agregamos la variable de entorno Kubectl:
+
 <img width="659" height="167" alt="image" src="https://github.com/user-attachments/assets/18d06b62-42e6-477d-9290-f78f4d533fee" />
+
 Nombre de la variable: Kubectl
 Valor de la variable: C:\Program Files\Docker\Docker\resources\bin\kubectl.exe
 
 Otra variable más:
+
 <img width="644" height="162" alt="image" src="https://github.com/user-attachments/assets/c2d67ad8-c2b7-4c8b-a825-b20460e76a6c" />
 <img width="531" height="48" alt="image" src="https://github.com/user-attachments/assets/2b9217ee-6379-4ad2-a5a8-b78a7e03c629" />
+
 Nombre de la variable: kubectl
 Valor de la variable: C:\Users\alejandro\Downloads\kubectl.exe
 
@@ -91,6 +105,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 
 
 Paso 3. Escribimos choco para verificar la versión
+
 <img width="453" height="73" alt="image" src="https://github.com/user-attachments/assets/43e4fa94-b6cc-41df-a5b9-21581c3e0dd9" />
 
 
