@@ -161,3 +161,8 @@ Comandos básicos de Kubernetes:
 - kubectl get deployments,pods,services,namespaces –o wide –- listar varios componentes en un solo comando
 - kubectl get deploy,pod,svc,ns –- listar con abreviaturas
 - kubectl config get-clusters
+
+
+
+## Licencia 📄
+Bajo licencia GNU General Public License v3.0
