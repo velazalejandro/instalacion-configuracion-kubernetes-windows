@@ -5,9 +5,8 @@ Instalación y configuración de Kubernetes en Windows
 ## Comenzando 🚀
 _Estas instrucciones te permiten obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
 
-### Pre-requisitos 📋
-_Que cosas necesitas para instalar el software y como instalarlas_
-- Manejar la consola de PowerShell para la ejecución de comandos.
+### 🛠️ Tecnologías utilizadas
+- Consola de PowerShell para la ejecución de comandos
 - Hyper V activado
 - Docker 18.02 en adelante
 - Conocimientos en Docker y Kubernetes
