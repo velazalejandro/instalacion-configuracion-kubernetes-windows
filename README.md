@@ -13,8 +13,6 @@ _Estas instrucciones te permiten obtener una copia del proyecto en funcionamient
 
 
 ### Instalación 🔧 Pruebas ⚙️ y Despliegues 📦
-INSTALACIÓN Y CONFIGURACIÓN DE KUBERNETES EN WINDOWS
-
 Primero instalar kubectl en windows:
 - https://kubernetes.io/es/docs/tasks/tools/included/install-kubectl-windows/#install-kubectl-binary-with-curl-on-windows
 - https://kubernetes.io/es/docs/tasks/tools/included/install-kubectl-windows/#install-on-windows-using-chocolatey-or-scoop
