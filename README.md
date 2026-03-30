@@ -2,9 +2,6 @@
 # Título
 Instalación y configuración de Kubernetes en Windows
 
-## Comenzando 🚀
-_Estas instrucciones te permiten obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
-
 ### 🛠️ Tecnologías utilizadas
 - Consola de PowerShell para la ejecución de comandos
 - Hyper V activado
