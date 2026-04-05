@@ -138,7 +138,7 @@ http://127.0.0.1:puerto
 
 
 
-Comandos básicos de Kubernetes:
+## Comandos básicos de Kubernetes:
 - kubectl get nodes -- visualiza los nodos existentes
 - kubectl proxy -- conexión con el servidor mediante 127.0.0.1:puerto
 - kubectl get services –- para enumerar los servicios en el espacio de nombres predeterminado
